@@ -21,9 +21,12 @@ roles:
 agents:
     - name: local-ping
       source: harness/local-ping.yaml
+    - name: url-mixed
+      source: https://raw.githubusercontent.com/halfsend-10/test-repo-03-url-harness-host/main/harness/url-mixed.yaml#sha256=3f148664e9c850486215fa476e76ab589de493ed288947a6165a32b63def6392
 allowed_remote_resources:
     - https://raw.githubusercontent.com/fullsend-ai/fullsend/
     - https://raw.githubusercontent.com/fullsend-ai/agents/
+    - https://raw.githubusercontent.com/halfsend-10/test-repo-03-url-harness-host/
 mint_url: https://bt-05b5c3fc-bt-mint.fullsend-ai.workers.dev
 inference:
     project: it-gcp-konflux-e2e-fullsend
